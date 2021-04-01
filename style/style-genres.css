@@ -1,0 +1,144 @@
+:root{
+    --marronFonce: #343330;
+    --marronClair: #7E5920;
+    --vert: #45462A;
+    --orange: #DC851F;
+    --jaune: #FFA737;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--marronClair);
+    display: grid;
+}
+header{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--marronFonce);
+    color: wheat;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--marronFonce);
+    color: wheat;
+    margin-top: auto;
+}
+footer a{
+    color: wheat;
+    font-size: 20px;
+}
+h4{
+    background-color: var(--jaune);
+}
+header input{
+    width: 200px;
+    height: 100px;
+    font-size: 24px;
+    background-color: var(--jaune);
+    color: var(--marronFonce);
+}
+header input:hover{
+    background-color: var(--marronFonce);
+    color: wheat;
+}
+.fiche-genre{
+    width: 1000px;
+    margin-top: 20px;
+    background-color: var(--orange);
+    transition: all 0.5s;
+}
+.fiche-genre:hover{
+    background-color: var(--jaune);
+}
+.nom-genre{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+}
+.nom-genre h3{
+    width: 70%;
+}
+.gestion-genre{
+    display: flex;
+}
+.gestion-genre input{
+    background-color: var(--marronClair);
+    color: wheat;
+    height: 25px;
+    opacity: 0.7;
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+.gestion-genre input:hover{
+    scale: 1.1;
+    opacity: 1;
+    background-color: var(--marronFonce);
+}
+.gestion-genre .delete{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.styles-associes{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.styles-associes li{
+    list-style-type: none;
+}
+.styles-associes input{
+    background-color: var(--marronClair);
+    color: wheat;
+    height: 20px;
+    opacity: 0.7;
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+.styles-associes input:hover{
+    scale: 1.1;
+    opacity: 1;
+    background-color: var(--marronFonce);
+}
+.modif-nom-genre{
+    height: 150px;
+    background-color: var(--marronFonce);
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px;
+}
+.modif-nom-genre a{
+    color: wheat;
+    font-size: 20px;
+}
+.modif-nom-genre input{
+    margin-right: 20px;
+}
+.btn-generique{
+    background-color: jaune;
+}

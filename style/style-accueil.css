@@ -1,0 +1,58 @@
+:root{
+    --marronFonce: #343330;
+    --marronClair: #7E5920;
+    --vert: #45462A;
+    --orange: #DC851F;
+    --jaune: #FFA737;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--marronClair);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+button{
+    height: 150px;
+    width: 300px;
+    background-color: var(--jaune);
+    box-shadow: 5px 5px 5px 0px var(--marronFonce);
+    -webkit-box-shadow: 5px 5px 5px 0px var(--marronFonce);
+    -moz-box-shadow: 5px 5px 5px 0px var(--marronFonce);
+}
+button:hover{
+    background-color: var(--orange);
+    color: wheat;
+}
+a button {
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--marronFonce);
+}
+.accueil-haut{
+    grid-row: 1/2;
+    text-align: center;
+    margin-top: auto;
+}
+.accueil-bas{
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.findlay{
+    font-size: 120px;
+    font-family: 'Bangers', cursive;
+    color: wheat;
+}
+.findlay::first-letter{
+    font-size: 180px;
+}
+.btn-generique{
+    background-color: jaune;
+}

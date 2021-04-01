@@ -1,0 +1,151 @@
+:root{
+    --marronFonce: #343330;
+    --marronClair: #7E5920;
+    --vert: #45462A;
+    --orange: #DC851F;
+    --jaune: #FFA737;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--marronClair);
+    display: grid;
+}
+header{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--marronFonce);
+    color: wheat;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--marronFonce);
+    color: wheat;
+    margin-top: auto;
+}
+footer a{
+    color: wheat;
+    font-size: 20px;
+}
+h4{
+    background-color: var(--jaune);
+    width: 80%;
+}
+header input{
+    width: 200px;
+    height: 100px;
+    font-size: 24px;
+    background-color: var(--jaune);
+    color: var(--marronFonce);
+}
+header input:hover{
+    background-color: var(--marronFonce);
+    color: wheat;
+}
+.gestion-artiste{
+    display: flex;
+}
+.modif-nom-artiste{
+    height: 150px;
+    background-color: var(--marronFonce);
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px;
+}
+.modif-nom-artiste a{
+    color: wheat;
+    font-size: 20px;
+}
+.fiche-artiste{
+    width: 350px;
+    background-color: var(--orange);
+    margin-top: 20px;
+    margin-left: 10px;
+    border-bottom-right-radius: 20%;
+    box-shadow: 5px 5px 5px 0px var(--marronFonce);
+    -webkit-box-shadow: 5px 5px 5px 0px var(--marronFonce);
+    -moz-box-shadow: 5px 5px 5px 0px var(--marronFonce);
+    transition: all 0.5s;
+}
+.fiche-artiste:hover{
+    background-color: var(--jaune);
+}
+.fiche-artiste h5{
+    margin-left: 10px;
+}
+.nom-artiste{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+}
+.nom-artiste h3{
+    width: 60%;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+.nom-artiste input{
+    width: 100px;
+    margin: 5px 5px 0px 0px;
+    background-color: var(--marronClair);
+    color: wheat;
+    border: none;
+    opacity: 0.7;
+    transition: all 0.5s;
+    height: 25px;
+}
+.nom-artiste input:hover{
+    scale: 1.1;
+    opacity: 1;
+}
+.nom-artiste .delete{
+    height: 25px;
+    width: 25px;
+    font-size: 25px;
+    border-radius: 50%;
+}
+.styles-artiste{
+   list-style-type: none;
+   margin-left: 10px;
+   padding-left: 5px;
+   border-left: solid var(--jaune) 5px;
+}
+.styles-artiste input{
+    background-color: var(--marronClair);
+    color: wheat;
+    border: none;
+    opacity: 0.7;
+    transition: all 0.5s;
+    height: 20px;
+    padding: 3px;
+}
+.styles-artiste input:hover{
+    scale: 1.1;
+    opacity: 1;
+}
+.modif-nom-artiste input{
+    margin-right: 20px;
+}
+.modif-nom-artiste .btn-generique{
+    background-color: jaune;
+}
