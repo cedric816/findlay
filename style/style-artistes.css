@@ -60,6 +60,21 @@ header input:hover{
     background-color: var(--marronFonce);
     color: wheat;
 }
+.menu{
+    display: flex;
+    align-items: center;
+}
+.btn-menu{
+    background-color: var(--jaune);
+    color: var(--marronFonce);
+    height: 64px;
+    width: 120px;
+    font-size: 20px;
+}
+.btn-menu:hover{
+    background-color: var(--marronFonce);
+    color: wheat;
+}
 .gestion-artiste{
     display: flex;
 }

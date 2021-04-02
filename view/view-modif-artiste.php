@@ -1,4 +1,5 @@
 <?php
+//formulaire modifier le nom d'un artiste//
 echo("<div class='modif-nom-artiste'><form method='post'>
     <h2>Ancien nom: ".htmlentities($name, ENT_QUOTES)."</h2></br>
     <label for='nom'>Nouveau nom:</label>

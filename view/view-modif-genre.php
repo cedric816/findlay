@@ -1,4 +1,5 @@
 <?php
+//formulaire modifier le nom d'un genre//
 echo("<div class='modif-nom-genre'><form method='post'>
     <h2>Ancien nom: ".htmlentities($nom, ENT_QUOTES)."</h2></br>
     <label for='nom'>Nouveau nom:</label>

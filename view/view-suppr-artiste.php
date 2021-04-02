@@ -1,4 +1,5 @@
 <?php
+//formulaire de confirmation pour supprimer un artiste//
 echo("<div class='modif-nom-artiste'><form method='post'>
     <h2>Supprimer l'artiste '".htmlentities($name, ENT_QUOTES)."' ?</h2></br>
     <input type='hidden' name='artist-id' value=".$id.">

@@ -61,11 +61,29 @@ header input:hover{
     background-color: var(--marronFonce);
     color: wheat;
 }
+.menu{
+    display: flex;
+    align-items: center;
+}
+.btn-menu{
+    background-color: var(--jaune);
+    color: var(--marronFonce);
+    height: 64px;
+    width: 120px;
+    font-size: 20px;
+}
+.btn-menu:hover{
+    background-color: var(--marronFonce);
+    color: wheat;
+}
 .fiche-genre{
     width: 1000px;
     margin-top: 20px;
     background-color: var(--orange);
     transition: all 0.5s;
+    box-shadow: 5px 5px 5px 0px var(--marronFonce);
+    -webkit-box-shadow: 5px 5px 5px 0px var(--marronFonce);
+    -moz-box-shadow: 5px 5px 5px 0px var(--marronFonce);
 }
 .fiche-genre:hover{
     background-color: var(--jaune);

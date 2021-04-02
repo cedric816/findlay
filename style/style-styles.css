@@ -55,6 +55,21 @@ header input:hover{
     background-color: var(--marronFonce);
     color: wheat;
 }
+.menu{
+    display: flex;
+    align-items: center;
+}
+.btn-menu{
+    background-color: var(--jaune);
+    color: var(--marronFonce);
+    height: 64px;
+    width: 120px;
+    font-size: 20px;
+}
+.btn-menu:hover{
+    background-color: var(--marronFonce);
+    color: wheat;
+}
 .fiche-style{
     width: 200px;
     height: 50px;
@@ -63,6 +78,9 @@ header input:hover{
     display: flex;
     font-size: 20px;
     transition: all 0.5s;
+    box-shadow: 5px 5px 5px 0px var(--marronFonce);
+    -webkit-box-shadow: 5px 5px 5px 0px var(--marronFonce);
+    -moz-box-shadow: 5px 5px 5px 0px var(--marronFonce);
 }
 .fiche-style:hover{
     background-color: var(--jaune);
@@ -77,6 +95,7 @@ header input:hover{
     margin-left: 3px;
     margin-right: 3px;
     transition: all 0.5s;
+    opacity: 0.7;
 }
 .fiche-style .delete{
     border-radius: 50%;

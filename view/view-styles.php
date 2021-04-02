@@ -1,11 +1,16 @@
 <header>
-    <h1>Liste de tous les styles</h1>
-    <form method="post">
+<form method="post">
         <input type="submit" name="creer-style" value="Nouveau style">
     </form>
-    <a href="?"><img src="ressources/door.png" alt="icone de retour à l'accueil" height="100px"></a>
+    <h1>Liste de tous les styles</h1>
+    <div class="menu">
+        <a href="?artistes"><button class='btn-menu'>Artistes</button></a>
+        <a href="?genres"><button class='btn-menu'>Genres</button></a>
+        <a href="?"><img src="ressources/door.png" alt="icone de retour à l'accueil" height="100px"></a>
+    </div>
 </header>
 <main>
+    <!--utilisation d'encres pour améliorer un peu la navigation-->
     <div class="sommaire">
         <a href="#A">A</a>
         <a href="#B">B</a>
@@ -35,6 +40,7 @@
         <a href="#Z">Z</a>
     </div>
     <?php
+    //on liste tous les styles en les triant par ordre alphabétique//
     $lettreEnCours = 'A';
     echo("<div class='alphabet'>".$lettreEnCours."</div>");
     while($style = $stylesTous->fetch()){

@@ -1,5 +1,5 @@
 <?php
-
+//même structure que la class Artiste
     class Genre{
 
         private $_pdo;
@@ -44,7 +44,8 @@
                 ':id' => $id
             ));
         }
-
+//pour supprimer un genre, il faut d'abord supprimer ses relations avec les styles
+//qui sont eux mêmme liés à la table artists_styles
         public function supprimer($id){
             $req3 = "SELECT * FROM `styles` WHERE `style_genre_id` = :id";
             $prep3 = $this->_pdo->prepare($req3);

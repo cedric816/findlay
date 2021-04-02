@@ -1,4 +1,5 @@
 <?php
+//formulaire pour créer un genre
 echo("<div class='modif-nom-genre'>
         <form method='post'>
             <label for='genre-name'>Nom du nouveau genre:</label>

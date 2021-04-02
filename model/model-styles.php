@@ -1,5 +1,5 @@
 <?php
-
+//même structure que la class Artiste
     class Style{
 
         private $_pdo;

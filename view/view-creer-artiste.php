@@ -1,4 +1,5 @@
 <?php
+//formulaire pour créer un artiste
 echo("<div class='modif-nom-artiste'>
         <form method='post'>
             <label for='artist-name'>Nom du nouvel artiste:</label>

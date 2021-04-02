@@ -1,10 +1,15 @@
 <header>
-    <h1>Liste de tous les genres</h1>
     <form method="post">
         <input type="submit" name="creer-genre" value="Nouveau genre">
     </form>
-    <a href="?"><img src="ressources/door.png" alt="icone de retour à l'accueil" height="100px"></a>
+    <h1>Liste de tous les genres</h1>
+    <div class="menu">
+        <a href="?artistes"><button class='btn-menu'>Artistes</button></a>
+        <a href="?styles"><button class='btn-menu'>Styles</button></a>
+        <a href="?"><img src="ressources/door.png" alt="icone de retour à l'accueil" height="100px"></a>
+    </div>
 </header>
+<!--on liste tous les genres et leurs styles associés-->
 <main>
 <?php
 while($genre = $genreTous->fetch()){

@@ -49,6 +49,7 @@ a button {
     font-size: 120px;
     font-family: 'Bangers', cursive;
     color: wheat;
+    letter-spacing: 3px;
 }
 .findlay::first-letter{
     font-size: 180px;

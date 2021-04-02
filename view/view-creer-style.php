@@ -1,4 +1,5 @@
 <?php
+//formulaire pour créer un style
 echo("<div class='modif-nom-style'>
         <form method='post'>
             <label for='style-name'>Nom du nouveau style:</label>
