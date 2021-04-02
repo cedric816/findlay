@@ -7,3 +7,4 @@ Pistes d'amélioration:
 - une fonction de la class Artiste qui devrait plutôt être dans la class Style
 - ajouter pleins d'autres fonctionnaltés! :)
 - input de type hidden, possible de modifier leur valeur dans l'inspecteur et de faire apparaître une erreur
+- validator w3c: button ne doit pas être un descendant de a, et action d'un form ne doit pas être vide
