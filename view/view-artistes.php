@@ -9,7 +9,7 @@
         <a href="?"><img src="ressources/door.png" alt="icone de retour à l'accueil" height="100px"></a>
     </div>
 </header>
-<!--on liste tous les artistes et leurs genres associés-->
+<!--on liste tous les artistes et leurs styles associés-->
 <main>
 <?php
 while($info = $infosArtistes->fetch()){
