@@ -1,5 +1,5 @@
 <?php
-//formulaire pour créer un genre
+//liste des artistes pour le genre choisi
 echo("<div class='resultat-tri'>
     <h2>Artistes du genre '".$nom."':</h2>");
     while ($artiste = $artistes->fetch()){
