@@ -44,27 +44,22 @@
     $lettreEnCours = 'A';
     echo("<div class='alphabet'>".$lettreEnCours."</div>");
     while($style = $stylesTous->fetch()){
-        if (strtoupper(substr($style['style_name'], 0, 1))==$lettreEnCours){
-            echo("<div class='fiche-style'><div class='nom-style'><h6>".$style['style_name']."</h6></div>
-            <form method='post' action='?styles'>
-            <input type='hidden' name='style-id' value=".$style['style_id'].">
-            <input type='hidden' name='style-name' value='".htmlentities($style['style_name'], ENT_QUOTES)."'>
-            <input type='submit' name='modif-nom-style' value='V'>
-            </form>
-            <form method='post' action='?styles'>
-            <input type='hidden' name='style_id' value=".$style['style_id'].">
-            <input type='hidden' name='style_name' value='".htmlentities($style['style_name'], ENT_QUOTES)."'>
-            <input class='delete' type='submit' name='suppr-style' value='X'>
-            </form>
-            </div>");
-        } else {
+        if (strtoupper(substr($style['style_name'], 0, 1))!=$lettreEnCours){
             $lettreEnCours=strtoupper(substr($style['style_name'], 0, 1));
             echo("<div class='alphabet' id='".$lettreEnCours."'>".$lettreEnCours."<a href='?styles'><img src='ressources/up-arrow.png'></a></div>");
-        }
-        if (strtoupper(substr($style['style_name'], 0, 1)) != $lettreEnCours){
-            echo("<div class='fiche-style'>".$style['style_name']."</div>");
-        }
-        
+        } 
+        echo("<div class='fiche-style'><div class='nom-style'><h6>".$style['style_name']."</h6></div>
+        <form method='post' action='?styles'>
+        <input type='hidden' name='style-id' value=".$style['style_id'].">
+        <input type='hidden' name='style-name' value='".htmlentities($style['style_name'], ENT_QUOTES)."'>
+        <input type='submit' name='modif-nom-style' value='V'>
+        </form>
+        <form method='post' action='?styles'>
+        <input type='hidden' name='style_id' value=".$style['style_id'].">
+        <input type='hidden' name='style_name' value='".htmlentities($style['style_name'], ENT_QUOTES)."'>
+        <input class='delete' type='submit' name='suppr-style' value='X'>
+        </form>
+        </div>");  
     }
     ?>
 </main>

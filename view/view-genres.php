@@ -23,6 +23,11 @@ while($genre = $genreTous->fetch()){
                     <form method='post' action=''>
                         <input type='hidden' name='genre-id' value=".$id.">
                         <input type='hidden' name='genre-name' value='".htmlentities($nom, ENT_QUOTES)."'>
+                        <input type='submit' name='artistes-par-genre' value='Voir les artistes'>
+                    </form>
+                    <form method='post' action=''>
+                        <input type='hidden' name='genre-id' value=".$id.">
+                        <input type='hidden' name='genre-name' value='".htmlentities($nom, ENT_QUOTES)."'>
                         <input type='submit' name='modif-nom-genre' value='Modifier nom'>
                     </form>
                     <form method='post' action=''>

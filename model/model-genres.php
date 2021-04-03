@@ -17,7 +17,7 @@
 
         public function lireStylesParGenre($idGenre){
             $req = "SELECT * FROM `styles`
-                    WHERE `style_genre_id` = :idGenre";
+                    WHERE `style_genre_id` = :idGenre ORDER BY `style_name` COLLATE utf8mb4_general_ci";
             $prep = $this->_pdo->prepare($req);
             $prep->execute(array(
                 ':idGenre' => $idGenre
@@ -73,10 +73,22 @@
             $prep = $this->_pdo->prepare($req);
             $prep->execute(array(
                 ':id' => $id
-            ));
-
-            
+            ));   
         }
 
-    }
+        public function artistesParGenre($idGenre){
+            //on récupère tous les styles liés au genre
+            $req = "SELECT * FROM `artists` WHERE `artist_id` IN(
+                    SELECT `artist_style_artist_id` FROM `artists_styles` WHERE `artist_style_style_id` IN(
+                    SELECT `style_id` FROM `styles` WHERE `style_genre_id` = :idGenre))";
+            $prep = $this->_pdo->prepare($req);
+            $prep->execute(array(
+                ':idGenre' => $idGenre
+            ));
+            return $prep;
+         }  
+            
+}   
+
+    
 ?>

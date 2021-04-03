@@ -37,7 +37,11 @@ if (isset($_POST['creer-genre'])){
     $genres->supprimer($_POST['genre-id']);
     echo("<div class='modif-nom-genre'><p>Genre supprimé
     <a href='?genres'>OK</a></p></div>");
-    }
+} elseif (isset($_POST['artistes-par-genre'])){
+    $artistes = $genres->artistesParGenre($_POST['genre-id']);
+    $nom = $_POST['genre-name'];
+    include('view/view-artistes-par-genre.php');
+}
    
 include('view/view-genres.php');
 ?>
