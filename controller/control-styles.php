@@ -34,6 +34,10 @@ if (isset($_POST['creer-style'])){
     $styles->supprime($_POST['style-id']);
     echo("<div class='modif-nom-style'><p>Style supprimé
     <a href='?styles'>OK</a></p></div>");
+} elseif (isset($_POST['artistes-par-style'])){
+    $artistes = $styles->artistesParStyle($_POST['style-id']);
+    $nom = $_POST['style-name'];
+    include('view/view-artistes-par-style.php');
 }
 
 include('view/view-styles.php');

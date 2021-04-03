@@ -52,7 +52,12 @@
         <form method='post' action='?styles'>
         <input type='hidden' name='style-id' value=".$style['style_id'].">
         <input type='hidden' name='style-name' value='".htmlentities($style['style_name'], ENT_QUOTES)."'>
-        <input type='submit' name='modif-nom-style' value='V'>
+        <input type='submit' name='artistes-par-style' value='A'>
+        </form>
+        <form method='post' action='?styles'>
+        <input type='hidden' name='style-id' value=".$style['style_id'].">
+        <input type='hidden' name='style-name' value='".htmlentities($style['style_name'], ENT_QUOTES)."'>
+        <input type='submit' name='modif-nom-style' value='N'>
         </form>
         <form method='post' action='?styles'>
         <input type='hidden' name='style_id' value=".$style['style_id'].">
