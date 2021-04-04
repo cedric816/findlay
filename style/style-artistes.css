@@ -87,6 +87,9 @@ header input:hover{
     align-items: center;
     margin: 200px;
 }
+.modif-nom-artiste label{
+    font-size: 20px;
+}
 .modif-nom-artiste a{
     color: wheat;
     font-size: 20px;
@@ -132,6 +135,7 @@ header input:hover{
 .nom-artiste input:hover{
     scale: 1.1;
     opacity: 1;
+    background-color: var(--marronFonce);
 }
 .nom-artiste .delete{
     height: 25px;
@@ -157,6 +161,7 @@ header input:hover{
 .styles-artiste input:hover{
     scale: 1.1;
     opacity: 1;
+    background-color: var(--marronFonce);
 }
 .modif-nom-artiste input{
     margin-right: 20px;

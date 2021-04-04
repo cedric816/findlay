@@ -71,11 +71,12 @@ header input:hover{
     color: wheat;
 }
 .fiche-style{
-    width: 200px;
-    height: 50px;
+    width: 250px;
+    height: 120px;
     background-color: var(--orange);
     margin: 5px;
     display: flex;
+    flex-direction: column;
     font-size: 20px;
     transition: all 0.5s;
     box-shadow: 5px 5px 5px 0px var(--marronFonce);
@@ -87,23 +88,30 @@ header input:hover{
 }
 .fiche-style input{
     height: 25px;
-    width: 25px;
+    width: 90px;
     background-color: var(--marronClair);
     color: wheat;
     transition: all 0.5s;
     margin-top: 5px;
     margin-left: 3px;
     margin-right: 3px;
+    margin-bottom: 3px;
     transition: all 0.5s;
     opacity: 0.7;
 }
 .fiche-style .delete{
     border-radius: 50%;
+    width: 25px;
 }
 .fiche-style input:hover{
     background-color: var(--marronFonce);
     color: wheat;
-    scale: 1.2;
+    scale: 1.1;
+    opacity: 1;
+}
+.options{
+    display: flex;
+    align-items: flex-end;
 }
 .alphabet{
     width: 100%;
@@ -119,7 +127,15 @@ header input:hover{
     display: flex;
     align-items: center;
     width: 70%;
+    height: 100%;
     margin-left: 3px;
+    font-size: 24px;
+}
+.gestion-style{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
 }
 .modif-nom-style{
     height: 150px;
@@ -129,6 +145,9 @@ header input:hover{
     justify-content: center;
     align-items: center;
     margin: 200px;
+}
+.modif-nom-style label{
+    font-size: 20px;
 }
 .modif-nom-style input{
     margin-right: 20px;
@@ -153,13 +172,19 @@ header input:hover{
     background-color: jaune;
 }
 .resultat-tri{
-    height: 150px;
+    width: 600px;
+    height: 400px;
     background-color: var(--marronFonce);
     color: wheat;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 200px;
+    justify-content: space-around;
+    margin: 30px auto 30px auto;
+}
+.resultat-tri p{
+    font-size: 24px;
+    text-align: center;
 }
 .resultat-tri a{
     color: wheat;

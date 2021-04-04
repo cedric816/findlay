@@ -80,7 +80,8 @@
             //on récupère tous les styles liés au genre
             $req = "SELECT * FROM `artists` WHERE `artist_id` IN(
                     SELECT `artist_style_artist_id` FROM `artists_styles` WHERE `artist_style_style_id` IN(
-                    SELECT `style_id` FROM `styles` WHERE `style_genre_id` = :idGenre))";
+                    SELECT `style_id` FROM `styles` WHERE `style_genre_id` = :idGenre))
+                    ORDER BY `artist_name` COLLATE utf8mb4_general_ci";
             $prep = $this->_pdo->prepare($req);
             $prep->execute(array(
                 ':idGenre' => $idGenre

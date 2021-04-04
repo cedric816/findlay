@@ -50,7 +50,8 @@
 
         public function artistesParStyle($idStyle){
             $req = "SELECT * FROM `artists` WHERE `artist_id` IN(
-                    SELECT `artist_style_artist_id` FROM `artists_styles` WHERE `artist_style_style_id` = :idStyle)";
+                    SELECT `artist_style_artist_id` FROM `artists_styles` WHERE `artist_style_style_id` = :idStyle) 
+                    ORDER BY `artist_name` COLLATE utf8mb4_general_ci";
             $prep = $this->_pdo->prepare($req);
             $prep->execute(array(
                 ':idStyle' => $idStyle

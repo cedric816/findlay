@@ -48,23 +48,27 @@
             $lettreEnCours=strtoupper(substr($style['style_name'], 0, 1));
             echo("<div class='alphabet' id='".$lettreEnCours."'>".$lettreEnCours."<a href='?styles'><img src='ressources/up-arrow.png'></a></div>");
         } 
-        echo("<div class='fiche-style'><div class='nom-style'><h6>".$style['style_name']."</h6></div>
-        <form method='post' action='?styles'>
-        <input type='hidden' name='style-id' value=".$style['style_id'].">
-        <input type='hidden' name='style-name' value='".htmlentities($style['style_name'], ENT_QUOTES)."'>
-        <input type='submit' name='artistes-par-style' value='A'>
-        </form>
-        <form method='post' action='?styles'>
-        <input type='hidden' name='style-id' value=".$style['style_id'].">
-        <input type='hidden' name='style-name' value='".htmlentities($style['style_name'], ENT_QUOTES)."'>
-        <input type='submit' name='modif-nom-style' value='N'>
-        </form>
+        echo("<div class='fiche-style'>
+        <div class='gestion-style'>
         <form method='post' action='?styles'>
         <input type='hidden' name='style_id' value=".$style['style_id'].">
         <input type='hidden' name='style_name' value='".htmlentities($style['style_name'], ENT_QUOTES)."'>
         <input class='delete' type='submit' name='suppr-style' value='X'>
         </form>
-        </div>");  
+        </div>
+        <div class='nom-style'><h6>".$style['style_name']."</h6></div>
+        <div class='options'>
+        <form method='post' action='?styles'>
+        <input type='hidden' name='style-id' value=".$style['style_id'].">
+        <input type='hidden' name='style-name' value='".htmlentities($style['style_name'], ENT_QUOTES)."'>
+        <input type='submit' name='artistes-par-style' value='Voir artistes'>
+        </form>
+        <form method='post' action='?styles'>
+        <input type='hidden' name='style-id' value=".$style['style_id'].">
+        <input type='hidden' name='style-name' value='".htmlentities($style['style_name'], ENT_QUOTES)."'>
+        <input type='submit' name='modif-nom-style' value='Modif nom'>
+        </form>
+        </div></div>");  
     }
     ?>
 </main>
