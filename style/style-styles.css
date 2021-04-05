@@ -28,7 +28,6 @@ header{
 main{
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
     margin-left: 50px;
 }
 footer{
